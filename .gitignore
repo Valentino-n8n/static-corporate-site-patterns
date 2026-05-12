@@ -1,0 +1,30 @@
+# Secrets — never commit
+config.php
+.env
+.env.local
+.env.production
+
+# Logs and runtime data
+logs/
+*.log
+rate_limits.json
+
+# Vendor directories (PHPMailer, etc.) — install via composer
+vendor/
+node_modules/
+
+# Editor / OS
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+
+# Build output
+dist/
+build/
+.cache/
+
+# Misc
+*.pid
+*.swp
+nul

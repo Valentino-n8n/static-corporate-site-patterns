@@ -1,0 +1,149 @@
+# ========================================================================
+# robots.txt — production configuration
+# ========================================================================
+# Per-bot rules: allow legitimate search and social bots, block
+# SEO-spam scrapers, disallow private paths, point to sitemaps.
+# ========================================================================
+
+# ── Major search engines ─────────────────────────────────────
+User-agent: Googlebot
+Allow: /
+Crawl-delay: 1
+
+User-agent: Bingbot
+Allow: /
+Crawl-delay: 1
+
+User-agent: Slurp
+Allow: /
+Crawl-delay: 1
+
+User-agent: DuckDuckBot
+Allow: /
+Crawl-delay: 1
+
+User-agent: Baiduspider
+Allow: /
+Crawl-delay: 2
+
+# ── Default rule for all other bots ──────────────────────────
+User-agent: *
+Allow: /
+
+# ── Block private / system paths ─────────────────────────────
+Disallow: /admin/
+Disallow: /config/
+Disallow: /includes/
+Disallow: /api/
+Disallow: /temp/
+Disallow: /tmp/
+Disallow: /cache/
+Disallow: /logs/
+Disallow: /backup/
+Disallow: /database/
+Disallow: /vendor/
+Disallow: /node_modules/
+Disallow: /.git/
+Disallow: /.env
+Disallow: /.htaccess
+Disallow: /composer.json
+Disallow: /composer.lock
+Disallow: /package.json
+Disallow: /package-lock.json
+
+# ── Block dev / staging paths ────────────────────────────────
+Disallow: /test/
+Disallow: /dev/
+Disallow: /staging/
+Disallow: /*?test*
+Disallow: /*?debug*
+
+# ── Block search and pagination params (avoid duplicate indexing) ─
+Disallow: /*?search*
+Disallow: /*?s=*
+Disallow: /*?q=*
+Disallow: /*?query=*
+Disallow: /*?sort*
+Disallow: /*?filter*
+Disallow: /*?page=*
+Disallow: /*?p=*
+
+# ── Block scripts and backend file extensions ────────────────
+Disallow: /*.php$
+Disallow: /*.inc$
+Disallow: /*.conf$
+Disallow: /*.sql$
+Disallow: /*.log$
+
+# ── Block SEO-spam / scraping bots ───────────────────────────
+User-agent: AhrefsBot
+Disallow: /
+
+User-agent: MJ12bot
+Disallow: /
+
+User-agent: SemrushBot
+Disallow: /
+
+User-agent: dotbot
+Disallow: /
+
+User-agent: Rogerbot
+Disallow: /
+
+User-agent: SiteAuditBot
+Disallow: /
+
+User-agent: BacklinkCrawler
+Disallow: /
+
+User-agent: spbot
+Disallow: /
+
+User-agent: MegaIndex
+Disallow: /
+
+# ── Allow legitimate social media link previews ──────────────
+User-agent: facebookexternalhit
+Allow: /
+Crawl-delay: 2
+
+User-agent: Twitterbot
+Allow: /
+Crawl-delay: 1
+
+User-agent: LinkedInBot
+Allow: /
+Crawl-delay: 2
+
+User-agent: WhatsApp
+Allow: /
+Crawl-delay: 1
+
+# ── Explicit allows for resources needed to render pages ─────
+Allow: /css/
+Allow: /js/
+Allow: /assets/
+Allow: /images/
+Allow: /fonts/
+Allow: /favicon.ico
+Allow: /robots.txt
+Allow: /sitemap.xml
+Allow: /sitemap*.xml
+Allow: /*.css$
+Allow: /*.js$
+Allow: /*.jpg$
+Allow: /*.jpeg$
+Allow: /*.png$
+Allow: /*.gif$
+Allow: /*.svg$
+Allow: /*.webp$
+Allow: /*.pdf$
+
+# ── Sitemaps ─────────────────────────────────────────────────
+Sitemap: https://example.com/sitemap.xml
+Sitemap: https://example.com/sitemap-images.xml
+
+# ── Contact ──────────────────────────────────────────────────
+# Host: example.com
+# Contact: info@example.com

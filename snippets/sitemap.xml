@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+  ====================================================================
+  sitemap.xml — production template
+  ====================================================================
+  Includes <lastmod>, <changefreq>, <priority>, image schema, and
+  hreflang annotations for multilingual variants.
+
+  Note: hash anchors (e.g. /#services) are not separate URLs and
+  should NOT be listed here — only real HTML pages.
+  ====================================================================
+-->
+
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:image="http://www.google.com/schemas/sitemap-image/1.1"
+        xmlns:xhtml="http://www.w3.org/1999/xhtml">
+
+  <!-- Homepage -->
+  <url>
+    <loc>https://example.com/</loc>
+    <lastmod>2026-01-30</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>1.0</priority>
+    <xhtml:link rel="alternate" hreflang="de" href="https://example.com/" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://example.com/?lang=en" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://example.com/" />
+    <image:image>
+      <image:loc>https://example.com/assets/hero.webp</image:loc>
+      <image:title>Hero image</image:title>
+      <image:caption>Brief description of the image</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://example.com/assets/team.jpg</image:loc>
+      <image:title>Team photo</image:title>
+      <image:caption>Brief description of the image</image:caption>
+    </image:image>
+  </url>
+
+  <!-- Services page -->
+  <url>
+    <loc>https://example.com/services.html</loc>
+    <lastmod>2026-01-30</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="de" href="https://example.com/services.html" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://example.com/services.html?lang=en" />
+  </url>
+
+  <!-- Contact page -->
+  <url>
+    <loc>https://example.com/contact.html</loc>
+    <lastmod>2026-01-30</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+    <xhtml:link rel="alternate" hreflang="de" href="https://example.com/contact.html" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://example.com/contact.html?lang=en" />
+  </url>
+
+  <!-- Imprint (legal requirement in DE) -->
+  <url>
+    <loc>https://example.com/imprint.html</loc>
+    <lastmod>2026-01-30</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.3</priority>
+  </url>
+
+  <!-- Privacy policy -->
+  <url>
+    <loc>https://example.com/privacy.html</loc>
+    <lastmod>2026-01-30</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.3</priority>
+  </url>
+
+</urlset>
+
+<!--
+  ====================================================================
+  NOTES FOR MAINTAINERS
+  ====================================================================
+  - Update <lastmod> on each meaningful content change
+  - Don't fake <lastmod> — search engines learn to distrust it
+  - Add new pages here when adding routes
+  - For sites with > 50,000 URLs: split into multiple sitemaps
+    and reference them all from a sitemap index file
+  ====================================================================
+-->
