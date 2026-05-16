@@ -1,7 +1,7 @@
 # Static Corporate Site Patterns
 
 A reference for building a fast, accessible, SEO-conscious corporate
-website on a classic LAMP-style stack — static HTML + CSS + vanilla JS
+website on a classic LAMP-style stack, static HTML + CSS + vanilla JS
 for the front, PHP + PHPMailer for the contact backend, Apache
 `.htaccess` for production hardening, and a Service Worker for
 offline-first behavior.
@@ -101,13 +101,13 @@ is at
 
 Companion repositories cover related patterns:
 
-- [`Valentino-n8n/DISPO`](https://github.com/Valentino-n8n/DISPO) —
+- [`Valentino-Veljanovski/DISPO`](https://github.com/Valentino-Veljanovski/DISPO):
   Microsoft 365 + DocuSign + AI-assisted operations
-- [`Valentino-n8n/Reklamation`](https://github.com/Valentino-n8n/Reklamation) —
+- [`Valentino-Veljanovski/Reklamation`](https://github.com/Valentino-Veljanovski/Reklamation):
   Slack-based case management
-- [`Valentino-n8n/BauScope-Control-Center`](https://github.com/Valentino-n8n/BauScope-Control-Center) —
+- [`Valentino-Veljanovski/BauScope-Control-Center`](https://github.com/Valentino-Veljanovski/BauScope-Control-Center):
   Role-based Slack platform with DocuSign HMAC
-- [`Valentino-n8n/BauScope-3D`](https://github.com/Valentino-n8n/BauScope-3D) —
+- [`Valentino-Veljanovski/BauScope-3D`](https://github.com/Valentino-Veljanovski/BauScope-3D):
   Next.js B2B landing page patterns
 
 ---
